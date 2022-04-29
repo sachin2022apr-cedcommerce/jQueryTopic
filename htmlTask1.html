@@ -17,7 +17,7 @@
                         <th>Price</th>
                         </tr>
                     </thead>
-                    <tbody id="myTable">
+                    <tbody id="table1">
                     <tr>
                                 <td class >
 
@@ -41,7 +41,7 @@
                     <option>Price</option>
                 </select>
                 <input type="text" id="search" placeholder="Filter Product">
-                <button onclick="filterProduct()" id="btn">Search</button>
+                <button onclick="filterProduct()" class="btn1">Search</button>
                 <table id="table">
                     <thead>
                         <tr>
@@ -52,6 +52,47 @@
                         </tr>
                     </thead>
                     <tbody id="table2">
+                    <tr>
+                                <td class >
+
+                                </td>
+                                <td class >
+
+                                </td>
+                                <td class >
+
+                                </td>
+                                <td class >
+
+                                </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table id="table">
+                    <thead>
+                        <tr>
+                        <th>Company</th>
+                        <th>Model</th>
+                        <th>Memory(GB)</th>
+                        <th>Price</th>
+                        </tr>
+                    </thead>
+                    <select  id="sort">
+                        <option>- sort -</option>
+                        <option>Ascending</option>
+                        <option>Descending</option>
+                        
+                    </select>
+                    <select  id="option" onchange="sortProduct()" value="">
+                        <option>- sort by -</option>
+                        <option>Company</option>
+                        <option>Model</option>
+                        <option>Memory</option>
+                        <option>Price</option>
+                    </select>
+                    
+                    <tbody id="table3">
                     <tr>
                                 <td class >
 

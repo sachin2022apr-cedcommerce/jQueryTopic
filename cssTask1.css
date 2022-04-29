@@ -29,5 +29,21 @@ background:#d4d4d4;
 
 border:1px solid #cccccc;
 border-radius:30%;
+text-align: center;
 
+}
+#sort,#option{
+margin:2% 2% 0 2%;
+width:30%;
+height:4%;
+background:#d4d4d4;
+text-align: center;
+border:1px solid #cccccc;
+border-radius:30%;
+
+}
+.btn1{
+  border-radius: 30%;
+  border-width: 2px;
+  
 }

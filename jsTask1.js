@@ -4,10 +4,23 @@ var product=[];
     product[2]={Company:"Xiaomi",Model:"Note",Memory:"32",Price:"12000"};
     product[3]={Company:"Motoroala",Model:"G10",Memory:"32",Price:"15000"};
     product[4]={Company:"Apple",Model:"S12",Memory:"64",Price:"25000"};
+    function compare( a, b ) {
+        if ( a.Company < b.Company ){
+          return -1;
+        }
+        if ( a.Company > b.Company ){
+          return 1;
+        }
+        return 0;
+      }
+      product.sort( compare );
+      console.log(product);
+
+
 
 function productList() {
     for(var i=0;i<=product.length;){
-        var row = myTable.insertRow();
+        var row = table1.insertRow();
         
             var cell1 = row.insertCell(0);
             cell1.innerHTML = product[i].Company;
@@ -19,6 +32,10 @@ function productList() {
             cell4.innerHTML = product[i].Price;
             i++;
         
+    }
+
+    function newFunction() {
+        cell1.innerHTML = product[i].Company;
     }
 }
 function filterProduct(){
@@ -81,6 +98,210 @@ function filterProduct(){
             if(f=="Price"){
                 if(product[i].Price==s){
                     var row = table2.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                    
+                }
+            }
+            
+        
+    }
+}
+
+function sortProduct(){
+    var Table = document.getElementById("table3");
+    Table.innerHTML = "";
+
+    var sort = document.getElementById("sort").value;  
+    
+    var option = document.getElementById("option").value;
+
+    
+    for(var i=0;i<=product.length;i++){
+            if(sort=="Ascending"){
+
+                if(option=="Company"){
+                    function compare( a, b ) {
+                        if ( a.Company < b.Company ){
+                          return -1;
+                        }
+                        if ( a.Company > b.Company ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                }
+                
+                
+                if(option=="Model"){
+                    function compare( a, b ) {
+                        if ( a.Model < b.Model ){
+                          return -1;
+                        }
+                        if ( a.Model > b.Model ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                }
+
+
+                if(option=="Memory"){
+                    function compare( a, b ) {
+                        if ( a.Memory > b.Memory ){
+                          return -1;
+                        }
+                        if ( a.Memory < b.Memory ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                    
+                }
+
+
+                if(option=="Price"){
+                    function compare( a, b ) {
+                        if ( a.Price < b.Price ){
+                          return -1;
+                        }
+                        if ( a.Price > b.Price ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                    
+                }
+            }
+            if(sort=="Descending"){
+                if(option=="Company"){
+                    function compare( a, b ) {
+                        if ( a.Company > b.Company ){
+                          return -1;
+                        }
+                        if ( a.Company < b.Company ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                }
+                
+                
+                if(option=="Model"){
+                    function compare( a, b ) {
+                        if ( a.Model > b.Model ){
+                          return -1;
+                        }
+                        if ( a.Model < b.Model ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                }
+
+
+                if(option=="Memory"){
+                    function compare( a, b ) {
+                        if ( a.Memory < b.Memory ){
+                          return -1;
+                        }
+                        if ( a.Memory > b.Memory ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = product[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = product[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = product[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = product[i].Price;
+                    
+                }
+
+
+                if(option=="Price"){
+                    function compare( a, b ) {
+                        if ( a.Price > b.Price ){
+                          return -1;
+                        }
+                        if ( a.Price < b.Price ){
+                          return 1;
+                        }
+                        return 0;
+                      }
+                      product.sort( compare );
+                    var row = table3.insertRow();
                     var cell1 = row.insertCell(0);
                     cell1.innerHTML = product[i].Company;
                     var cell2 = row.insertCell(1);
