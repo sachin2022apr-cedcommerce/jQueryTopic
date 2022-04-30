@@ -15,21 +15,23 @@ width:40%;
 height:90%;
 }
 
-#table{
+table{
   width: 98%;
   height:94%;
-  margin:3% 0 0 0; 
+  margin:0 0 0 0; 
   text-align: center;
 }
-select#filter{
+#filter{
   margin:2% 0 0 2%;
-width:20%;
+width:23%;
 height:4%;
 background:#d4d4d4;
 
 border:1px solid #cccccc;
-border-radius:30%;
+border-radius:6px;
 text-align: center;
+
+
 
 }
 #sort,#option{
@@ -39,11 +41,23 @@ height:4%;
 background:#d4d4d4;
 text-align: center;
 border:1px solid #cccccc;
-border-radius:30%;
+border-radius:6px;
 
 }
-.btn1{
+.btn1, .btn2{
   border-radius: 30%;
   border-width: 2px;
-  
+  background:#d4d4d4;
+text-align: center;
+border:1px solid #cccccc;
+border-radius:6px;
+}
+
+.add{
+
+width: 50%;
+float: left;
+
+margin: 0% 0% 3% 25%;
+
 }

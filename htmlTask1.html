@@ -8,7 +8,8 @@
         <div class="outer">
             <div class="inner">
                 <body onload="productList()"></body>
-                <table id="table">
+                <h4>Product List</h4>
+                <table>
                     <thead>
                         <tr>
                         <th>Company</th>
@@ -34,6 +35,9 @@
                     </tr>
                     </tbody>
                 </table>
+
+                <hr>
+                <h4>Filter Product</h4>
                 <select name="Filter" id="filter">
                     <option>Company</option>
                     <option>Model</option>
@@ -42,7 +46,7 @@
                 </select>
                 <input type="text" id="search" placeholder="Filter Product">
                 <button onclick="filterProduct()" class="btn1">Search</button>
-                <table id="table">
+                <table>
                     <thead>
                         <tr>
                         <th>Company</th>
@@ -68,8 +72,9 @@
                     </tr>
                     </tbody>
                 </table>
-
-                <table id="table">
+<hr>
+            <h4>Sort Product</h4>
+                <table>
                     <thead>
                         <tr>
                         <th>Company</th>
@@ -109,8 +114,63 @@
                     </tr>
                     </tbody>
                 </table>
+                <hr>
+                <h4>Add Product</h4>
+                <div class="add">
+                    <label>Company</label><br>
+                            <input type="text" id="Company" placeholder="Enter Company"><br>
+                    <label>Model</label><br>
+                            <input type="text" id="Model" placeholder="Enter Model"><br>
+                    <label>Memory</label><br>
+                            <input type="text" id="Memory" placeholder="Enter Memory"><br>
+                    <label>Price</label><br>
+                            <input type="text" id="Price" placeholder="Enter Price"><br><br>
+  
+  
+  
+                    <button onclick="addProduct()" class="btn2">Add Product</button>
+            
+                    
+
+                </div>
+
+
+             
+                <table>
+                    
+                    <thead>
+                        
+                        <tr>
+                        <th>Company</th>
+                        <th>Model</th>
+                        <th>Memory(GB)</th>
+                        <th>Price</th>
+                        </tr>
+                    </thead>
+                    
+                    
+                    
+                    <tbody id="table4">
+                    <tr>
+                                <td class >
+
+                                </td>
+                                <td class >
+
+                                </td>
+                                <td class >
+
+                                </td>
+                                <td class >
+
+                                </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+
             </div>
-        </div>
+        </div>>    
     </body>
 </html>
 
