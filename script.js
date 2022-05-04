@@ -1,8 +1,13 @@
-// Setup
-var myArr = [ 2, 3, 4, 5, 6];
-var total = 0;
+function multiplyAll(arr) {
+  var product = 1;
+  
+  for (var i=0; i < arr.length; i++) {
+    for (var j=0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
 
-for (var i = 0; i < myArr.length; i++) {
-  total += myArr[i];
+  return product;
 }
 
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
