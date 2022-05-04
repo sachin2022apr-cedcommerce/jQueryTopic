@@ -1,6 +1,5 @@
-function checkSign(num) {
-  return num > 0 ? "positive"
-    : num < 0 ? "negative"
-    : "zero";
+// Only change code below this line
+function countdown(n){
+   return n < 1 ? [] : [n, ...countdown(n - 1)];
 }
-checkSign(10);
+// Only change code above this line
