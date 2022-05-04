@@ -8,10 +8,10 @@ background:#d8e4dd;
 }
 
 .inner {
-margin:2% 0 2% 30%;
+margin:2% 0 2% 26%;
 background:#5cdb95;
 float:left;
-width:40%;
+width:45%;
 height:90%;
 }
 
@@ -34,9 +34,9 @@ text-align: center;
 
 
 }
-#sort,#option{
-margin:2% 2% 0 2%;
-width:30%;
+#sort,#option {
+margin:2% 0.5% 0 2%;
+width:27%;
 height:4%;
 background:#d4d4d4;
 text-align: center;
@@ -44,13 +44,24 @@ border:1px solid #cccccc;
 border-radius:6px;
 
 }
-.btn1, .btn2{
+.btn1, .btn2 , .btn3 , .btn4 , .btn5, .btn6 , .btn7, .btn8, .btn9 , .btn10, .btn11 {
   border-radius: 30%;
+  border-width: 1px;
+  background:#d4d4d4;
+text-align: center;
+border:1px solid #cccccc;
+border-radius:5px;
+}
+
+.btn6{
+border-radius: 30%;
   border-width: 2px;
   background:#d4d4d4;
 text-align: center;
 border:1px solid #cccccc;
 border-radius:6px;
+float:right;
+margin:3.5% 2% 0 0;
 }
 
 .add{
@@ -61,3 +72,9 @@ float: left;
 margin: 0% 0% 3% 25%;
 
 }
+
+#sQuantity{
+  width:35%;
+
+}
+
