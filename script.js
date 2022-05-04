@@ -1,9 +1,9 @@
-function trueOrFalse(myCondition) {
-  if (myCondition) {
-    return "Yes, that was true";
+// Setup
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
   }
-  return "No, that was false";
+  return "Not Equal";
 }
 
-trueOrFalse(true);
-trueOrFalse(false);
+testEqual(10);
