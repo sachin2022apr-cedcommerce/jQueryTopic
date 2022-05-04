@@ -1,11 +1,7 @@
-// Setup
-var myArray = [];
-var i = 10;
-
-// Only change code below this line.
-
-do {
-  myArray.push(i);
-  i++;
-} while (i < 5)
-
+function sum(arr, n) {
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
