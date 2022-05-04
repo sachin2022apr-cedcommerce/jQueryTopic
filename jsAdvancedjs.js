@@ -10,8 +10,8 @@ var employeeObj=[];
     }
 }
 var objE=[];
-
-
+var JSONAr=[];
+var value;
 function addEmployeeWithObj(){
     var Table = document.getElementById("tbl1");
     Table.innerHTML = "";
@@ -89,27 +89,24 @@ function addEmployeeWithJSON(){
 		var Table = document.getElementById("tbl3");
     	Table.innerHTML = "";
 
-		let	varJSON = '{ "employees" : [' + '{ "firstName":"John"},' + '{ "firstName":"Anna"},' + '{ "firstName":"Peter"} ]}';
+		let D1 = new Employee (ID, Name, Salary);
+        value=JSON.stringify(D1);
+        JSONAr.push(value);
 
-        let text = '{"employees":"'+emp.ID+'", "name":"'+emp.name+'" , "salary": "'+emp.salary+'"}';
-        document.getElementById("demo").innerHTML=text;
+	
+		for(var i=0;i<=JSONAr.length;i++){
+            let text=JSON.parse(JSONAr[i]);
 
-        
-		var i=Number(objE.length);
-			if(!(ID=='' && Name=='' && Salary=='' )){
-				objE[i] = new Employee(ID,Name,Salary);  
-			}
-
-
-		for(var i=0;i<=objE.length;i++){
-        	var row = tbl3.insertRow(0);
+            var row = tbl3.insertRow(0);
         
             var cell1 = row.insertCell(0);
-            cell1.innerHTML = objE[i].ID;
+            cell1.innerHTML = text.ID;
             var cell2 = row.insertCell(1);
-            cell2.innerHTML = objE[i].Name;
+            cell2.innerHTML = text.Name;
             var cell3 = row.insertCell(2);
-            cell3.innerHTML = objE[i].Salary;
+            cell3.innerHTML = text.Salary;
+			
+        	
     	}
 }
 
